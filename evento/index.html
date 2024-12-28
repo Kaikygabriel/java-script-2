@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+</head>
+<body onload="alert('terminou de carregar')"
+onresize="console.log('houve um redsonamento')"
+>
+    <h1>eventos java script</h1>
+    <button onclick="clicou()">click aqui</button>
+
+    <button ondblclick="clickduplo()">de dois click</button>
+
+    <button onmouseover="sobre()">coloque o mouse sobre o button</button>
+    <br>
+    <div id="muda"
+    style="width: 80vw; height: 300px; background-color: blue; margin: auto; margin-top: 20px; " onmouseover="entrou()"onmouseout="sair()"onmousemove="movendo()">
+    
+    </div>
+  
+    <input type="text" placeholder="digite algo" style="padding: 10px; font-size: 30px; margin: auto;" id="input1"
+    onfocus="focou()" onchange="mudou()"
+    
+    value="vem com texto"
+    onkeypress="teclapressionada()"
+    >
+    <a href="google.com" >aperte</a>
+    <script src="script.js"></script>
+</body>
+</html>
