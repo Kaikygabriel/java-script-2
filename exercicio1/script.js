@@ -24,8 +24,9 @@ function enviar(){
    
     lista.push(Number(nome.value))
 
-    
-    op.innerHTML += `${nome.value} foi adicionado <br>`
+    var txt = document.createTextNode(`${nome.value} foi adicionado`)
+    // op.innerHTML += `${nome.value} foi adicionado <br>`
+    op.appendChild(txt)
     se1.appendChild(op)
    
     nome.focus()
@@ -40,6 +41,8 @@ function enviar(){
 }
 
 function remove(){
-  lista.pop()
+  lista.pop(Number(nome.value))
  op.remove()
+ txt = 'removido'
+ op.appendChild(txt)
 }
