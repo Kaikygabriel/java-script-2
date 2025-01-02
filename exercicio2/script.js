@@ -48,7 +48,7 @@ function parar(){
 
 function reiniciar(){
     window.location.reload()
-    num.focus()
+   
 }
 
 function entrou(){
